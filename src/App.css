@@ -1,0 +1,137 @@
+.userContainer{
+  height:100vh;
+  display:flex;
+  gap:20px;
+  background-color: #01020f ;
+  padding-top:50px;
+  padding-left:50px;
+  padding-right:50px;
+  padding-bottom:50px;
+  color:white;
+}
+.userList {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  overflow-y: auto;
+  white-space: nowrap;
+  height: 100vh;
+  flex:1;
+}
+.show{
+  display:none;
+}
+.user_cnt{
+  flex:1;
+  color:white;
+  display:flex;
+  align-items: center;
+  gap:30px;
+  border: 2px solid #2b3074;
+  padding:20px;
+
+}
+.user_cnt>img{
+  height:70px;
+  border-radius: 50px;
+} 
+
+.user_details{
+  display:flex;
+  flex-direction: column;
+  gap:50px;
+  flex:1;
+  color:white;
+  border: 2px solid #2b3074;
+  padding:20px;
+  height:93vh;
+}
+.usercenter{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:50px;
+}
+.usercenter>img{
+  height:200px;
+  width:200px;
+  align-items: center;
+  border-radius: 50%;
+}
+.userDetail{
+  display:flex;
+  flex-direction: column;
+  gap:20px;
+}
+.maxwidth800{
+  display: flex;
+  flex:1;
+}
+.user_detailcnt{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:250px;
+}
+
+@media screen and (max-width:1000px){
+  .user_cnt{
+    display:flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:800px){
+  .userContainer{
+    padding:10px;
+  }
+  .userList{
+    gap:10px;
+  }
+  .show{
+    display:none;
+  }
+  .user_cnt{
+    padding:10px;
+  }
+  .user_cnt>img{
+    height:50px;
+    border-radius: 50px;
+  } 
+  
+  .user_details{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    flex:1;
+    color:white;
+    border: 2px solid #2b3074;
+    padding:20px;
+    height:fit-content;
+  }
+  .usercenter{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+  }
+  .usercenter>img{
+    height:100px;
+    width:100px;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .user_detailcnt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+    overflow: hidden;
+  }
+
+  .show{
+    display:block;
+  }
+  .maxwidth800{
+    display:none;
+  }  
+}
